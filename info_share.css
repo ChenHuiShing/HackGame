@@ -1,0 +1,486 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'cwTeXYen', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+}
+a,a:hover{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 90%;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+@media screen and (min-width: 1081px){
+
+    .main_background img{
+        width: 100vw;
+        margin-top: 0;
+        z-index: 10;
+    }
+    .container_partone h2 {
+        position: absolute;
+        top: 5rem;
+        left: 38%;
+        font-size: 40px;
+        text-align: center;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partone h4 {
+        position: absolute;
+        width: 320px;
+        top: 22rem;
+        left: 10rem;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partone .text_one{
+        position: absolute;
+        top: 18.5rem;
+        right: 15rem;
+        font-size: 20px;
+        letter-spacing: 2px;
+        z-index: 30;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+    }
+    .container_partone .text_two {
+        position: absolute;
+        top: 26.5rem;
+        right: 10rem;
+        font-size: 20px;
+        letter-spacing: 2px;
+        z-index: 30;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+    }
+    .container_partone .text_one:hover,
+    .container_partone .text_two:hover{
+        transform: scale(1.1);
+        color: #745746;
+    }
+    .container_partone .title_bg{
+        position: absolute;
+        width: 40%;
+        top: 5rem;
+        left: 30rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .img_bg{
+        position: absolute;
+        width: 30%;
+        top: 18rem;
+        left: 5rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .pin{
+        position: absolute;
+        width: 2%;
+        top: 15rem;
+        left: 22rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .small_titlebg01{
+        position: absolute;
+        width: 22%;
+        height: 80px;
+        top: 18rem;
+        right: 10rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .small_titlebg02{
+        position: absolute;
+        width: 22%;
+        height: 80px;
+        top: 26rem;
+        right: 10rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .check01{
+        position: absolute;
+        width: 2%;
+        top: 19.7rem;
+        right: 28rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .check02{
+        position: absolute;
+        width: 2%;
+        top: 27.5rem;
+        right: 30rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partone .line2{
+        position: absolute;
+        width: 28%;
+        top: 17rem;
+        left: 32rem;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_partone .line3{
+        position: absolute;
+        width: 25%;
+        top: 29rem;
+        left: 32rem;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_parttwo h3{
+        position: absolute;
+        top: 42rem;
+        left: 12rem;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_parttwo .title_bg{
+        position: absolute;
+        width: 25%;
+        top: 40.5rem;
+        left: 8rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_parttwo .text01{
+        position: absolute;
+        width: 710px;
+        top: 49.5rem;
+        left: 15rem;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .dialog_container img:first-child{
+        position: absolute;
+        width: 55%;
+        top: 47rem;
+        left: 10rem;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_parttwo .text02{
+        position: absolute;
+        width: 760px;
+        top: 62.5rem;
+        right: 2rem;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .dialog_container img:nth-child(2){
+        position: absolute;
+        width: 57%;
+        top: 61.2rem;
+        right: 0;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_parttwo .text03{
+        position: absolute;
+        width: 720px;
+        top: 77.5rem;
+        left: 15rem;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .dialog_container img:nth-child(3){
+        position: absolute;
+        width: 55%;
+        top: 75.5rem;
+        left: 10rem;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_parttwo .text04{
+        position: absolute;
+        width: 760px;
+        top: 91.5rem;
+        right: 2rem;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .dialog_container img:nth-child(4){
+        position: absolute;
+        width: 57%;
+        top: 90rem;
+        right: 0;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_parttwo .text05{
+        position: absolute;
+        width: 720px;
+        top: 105.5rem;
+        left: 15rem;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .dialog_container img:nth-child(5){
+        position: absolute;
+        width: 55%;
+        top: 104rem;
+        left: 10rem;
+        z-index: 10;
+        opacity: 0;
+    }
+    .container_partthree #start_modal{
+        position: absolute;
+        top: 118rem;
+        left: 35%;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #fff;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree h3{
+        position: absolute;
+        top: 118rem;
+        left: 35%;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #fff;
+        z-index: 30;
+    }
+    .container_partthree .title_bg{
+        position: absolute;
+        width: 35%;
+        height: 30px;
+        top: 115rem;
+        left: 31.5rem;
+        z-index: 20;
+        border-radius: 50px;
+        opacity: 0;
+    }
+    .container_partthree .title2_bg{
+        position: absolute;
+        width: 35%;
+        height: 30px;
+        top: 118rem;
+        left: 31.5rem;
+        z-index: 20;
+        border-radius: 50px;
+    }
+    .container_partthree .dialog_bg{
+        position: absolute;
+        width: 85%;
+        top: 115rem;
+        left: 8rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .subtitle_one{
+        position: absolute;
+        top: 133rem;
+        left: 17rem;
+        color: white;
+        font-size: 22px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .subtitle_two{
+        position: absolute;
+        top: 140rem;
+        left: 17rem;
+        color: white;
+        font-size: 22px;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .goal_text{
+        position: absolute;
+        top: 134.5rem;
+        left: 38rem;
+        width: 120px;
+        height: 120px;
+        color: white;
+        background-color: #978856;
+        border-radius: 70px;
+        font-size: 22px;
+        z-index: 30;
+        text-align: center;
+        padding-top: 48px;  
+        opacity: 0;  
+    }
+    .container_partthree img:nth-child(3){
+        position: absolute;
+        width: 12%;
+        top: 136rem;
+        left: 28rem;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree img:nth-child(4){
+        position: absolute;
+        width: 12%;
+        top: 136rem;
+        left: 45rem;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .circle{
+        position: absolute;
+        width: 18%;
+        top: 131rem;
+        left: 55rem;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .plan_text{
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        top: 130rem;
+        left: 73rem;
+        color: black;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .execute_text{
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        top: 145rem;
+        right: 18rem;
+        color: black;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .check_text{
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        top: 145rem;
+        left: 56rem;
+        color: black;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree .improve_text{
+        display: inline-block;
+        width: 50px;
+        position: absolute;
+        top: 132rem;
+        left: 56rem;
+        color: black;
+        z-index: 30;
+        opacity: 0;
+    }
+    .container_partthree h6{
+        position: absolute;
+        top: 137.5rem;
+        left: 62rem;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        z-index: 40;
+        opacity: 0;
+    }
+    .container_partthree img:nth-child(6){
+        position: absolute;
+        width: 17%;
+        top: 130rem;
+        left: 15rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree img:nth-child(7){
+        position: absolute;
+        width: 16%;
+        top: 137.5rem;
+        left: 15rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .arrow_top{
+        position: absolute;
+        width: 10%;
+        top: 125rem;
+        right: 23.5rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .arrow_right{
+        position: absolute;
+        width: 3%;
+        top: 135.5rem;
+        right: 15rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .arrow_bottom{
+        position: absolute;
+        width: 10%;
+        top: 148rem;
+        right: 24rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .arrow_left{
+        position: absolute;
+        width: 3%;
+        top: 135.5rem;
+        right: 38rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    .container_partthree .two_arrow{
+        position: absolute;
+        width: 28%;
+        top: 148rem;
+        right: 26.5rem;
+        z-index: 20;
+        opacity: 0;
+    }
+    footer p{
+        width: 100%;
+        position: absolute;
+        padding: 15px 0px;
+        background: #BD9985;
+        text-align: center;
+        color: #fff;
+        top: 182rem;
+        margin-bottom: unset;
+    }
+}

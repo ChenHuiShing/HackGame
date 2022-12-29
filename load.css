@@ -1,0 +1,26 @@
+.loader_wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E6D7D1;
+    display: block;
+    z-index: 200;
+}
+.loader {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    font-weight: 700;
+    color: #AF8267;
+    z-index: 210;
+}
+.loader .letter {
+    display: inline-block;
+    line-height: 1em;
+}

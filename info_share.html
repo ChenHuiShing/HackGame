@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap套件-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- fontawesome套件-->
+    <script type="text/javascript">
+        (function() {
+          var css = document.createElement('link');
+          css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+          css.rel = 'stylesheet';
+          css.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+      </script>
+      <!-- hover.css套件-->
+      <link rel="stylesheet" type="text/css" href="hover.css">
+      <link rel="stylesheet" type="text/css" href="hover-min.css">
+      <script src="https://kit.fontawesome.com/d5a2c2ef4a.js" crossorigin="anonymous"></script>
+      <!-- anime js套件-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- GSAP套件-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <!-- 引入資料檔-->
+    <link rel="stylesheet" type="text/css" href="header_style.css">
+    <link rel="stylesheet" type="text/css" href="info_share.css">
+    <link rel="stylesheet" type="text/css" href="back_to_top.css">
+
+    <script type="text/javascript" src="header.js"></script>
+    <script type="text/javascript" src="info_share.js"></script>
+    <script type="text/javascript" src="back_to_top.js"></script>
+    <title>Nursery</title>
+</head>
+<body>
+    <!-- 導覽navbar-->
+    <header class="nav-bar scroll_nav">
+        <ul>
+          <a href="index.html"><img src="https://i.imgur.com/BdLosnX.png" alt="logo.png" class="logo"></a>
+          <li><a href="organization.html">成員介紹</a></li>
+          <li><a href="test.html">優質小學堂</a></li>
+          <li><a href="info_share.html">資訊分享</a></li>
+          <li>
+              <a href="#">課程動畫</a>
+              <ul>
+                <li><a href="ani_manage.html">何謂幼兒園優質管理</a></li>
+                <li><a href="ani_system.html">OPDCA系統化運作</a></li>
+                <li><a href="ani_goal.html">訂定目標與問題分析</a></li>
+              </ul>
+              </li>
+          <li><a href="manage.html">優質管理</a></li>
+        </ul>
+    </header>
+    <div class="container_partone">
+        <h2>幼兒園系統化運作的應用<br>與實例分析</h2>
+        <h4>從系統化運作的角度,介紹幼兒園應用 PDCA 循環的重要概念,並透過實例說明具體做法。</h4>
+        <a href="#set_goal" class="text_one">幼兒園的目標確立:<br>優質專業的教保品質</a>
+        <a href="#start_modal" class="text_two">從幼兒園運作的角度<br>提出兩種可能的起點模式</a>
+        <img src="https://i.imgur.com/WJpQ7qN.png" alt="title_bg.png" class="title_bg">
+        <img src="https://i.imgur.com/btaokbu.png" alt="img_bg.png" class="img_bg">
+        <img src="https://i.imgur.com/ia7IF8c.png" alt="pin.png" class="pin">
+        <img src="https://i.imgur.com/JWJjNe9.png" alt="small_titlebg01.png" class="small_titlebg01">
+        <img src="https://i.imgur.com/RiUiBPq.png" alt="small_titlebg02.png" class="small_titlebg02">
+        <img src="https://i.imgur.com/4pmmP5d.png" alt="check_01.png" class="check01">
+        <img src="https://i.imgur.com/gWnEMpL.png" alt="check_02.png" class="check02">
+        <img src="https://i.imgur.com/zRHI6V6.png" alt="line2.png" class="line2">
+        <img src="https://i.imgur.com/pcekGnZ.png" alt="line3.png" class="line3">
+    </div>
+    <div class="container_parttwo">
+        <h3 id="set_goal">幼兒園的目標確立:<br>優質專業的教保品質</h3>
+        <p class="text01">有明確的教保目標，即可擬定園務發展計畫，所有園務計畫的方向必須是朝向教保目標前進。</p>
+        <p class="text02">幼兒園的園務工作內容極其繁多，園務領導、資源管理、教保活動課程、評量與輔導、安全與健康、家庭與社區等六個層面是建立幼兒園教保專業品質的關鍵項目，各層面的執行彼此是環環相扣、相互影響的完整系統。</p>
+        <p class="text03">幼兒園在進行PDCA之前，可以先進行幼兒園的SWOT分析，釐清幼兒園內外在的各項條件，同時進行現有資源盤點，以避免過於理想化的願景，導致執行成效不彰。</p>
+        <p class="text04">現有資源盤點的目的在於設立可行的具體目標,內在條件例如,創園歷史、幼兒園的師資人力、園內的主次文化、現有環境設備、教師專業表現、經費等;外在條件例如,地理位置、社區資源、家長資源等。</p>
+        <p class="text05">PDCA循環適用在幼兒園的各層面,從園務發展計畫、課程轉型、辦理親職講座、教師專業成長培訓等,到教室內的班級經營、學習區規劃等,都可以應用 PDCA 來達成各層面的大小目標。</p>
+        <img src="https://i.imgur.com/cWY7San.png" alt="title_bg" class="title_bg">
+        <div class="dialog_container">
+            <img src="https://i.imgur.com/OG6oRmr.png" alt="dialog_bg.png">
+            <img src="https://i.imgur.com/OG6oRmr.png" alt="dialog_bg.png">
+            <img src="https://i.imgur.com/OG6oRmr.png" alt="dialog_bg.png">
+            <img src="https://i.imgur.com/OG6oRmr.png" alt="dialog_bg.png">
+            <img src="https://i.imgur.com/OG6oRmr.png" alt="dialog_bg.png">
+        </div>
+    </div>
+    <div class="container_partthree">
+        <a id="start_modal">下方例子從幼兒園運作的角度,提出兩種可能的起點模式</a>
+        <h3 class="subtitle_one">解決困境問題分析</h3>
+        <h3 class="subtitle_two">新方向現況分析</h3>
+        <h5 class="goal_text">目標</h5>
+        <p class="plan_text">計畫</p>
+        <p class="execute_text">執行</p>
+        <p class="check_text">檢核</p>
+        <p class="improve_text">改進</p>
+        <h6>滾動修正<br>循環</h6>
+        <div class="img_container">
+            <img src="https://i.imgur.com/KT74rar.png" alt="title_bg.png" class="title_bg">
+            <img src="https://i.imgur.com/SmSpbyt.png" alt="dialog_bg.png" class="dialog_bg">
+            <img src="https://i.imgur.com/AmLksmD.png" alt="arrow.png" class="arrow">
+            <img src="https://i.imgur.com/AmLksmD.png" alt="arrow.png" class="arrow">
+            <img src="https://i.imgur.com/FNr6oHw.png" alt="circle" class="circle">
+            <img src="https://i.imgur.com/pgZHenX.png" alt="img_bg2.png" class="img_bg2">
+            <img src="https://i.imgur.com/pgZHenX.png" alt="img_bg2.png" class="img_bg2">
+            <img src="https://i.imgur.com/RyIZJhx.png" alt="arrow_top.png" class="arrow_top">
+            <img src="https://i.imgur.com/l7oioDQ.png" alt="arrow_right.png" class="arrow_right">
+            <img src="https://i.imgur.com/juaVuoA.png" alt="arrow_bottom.png" class="arrow_bottom">
+            <img src="https://i.imgur.com/F06No1F.png" alt="arrow_left.png" class="arrow_left">
+            <img src="https://i.imgur.com/27hKuOJ.png" alt="two_arrow.png" class="two_arrow">
+        </div>
+    </div>
+<div class="main_background">
+    <img src="https://i.imgur.com/ArL3mHj.png" alt="container_bg">
+    <img src="https://i.imgur.com/ArL3mHj.png" alt="container_bg">
+    <img src="https://i.imgur.com/ArL3mHj.png" alt="container_bg">
+    <img src="https://i.imgur.com/ArL3mHj.png" alt="container_bg">
+    <img src="https://i.imgur.com/ArL3mHj.png" alt="container_bg">
+</div>
+<img src="https://i.imgur.com/aUllCeJ.png" id="back_btn">
+<footer>
+    <p>&copy; 112級嘉義大學數位系畢業專題 @Nursery</p>
+</footer>
+</body>
+</html>
