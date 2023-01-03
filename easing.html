@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>multiscroll.js - split multi-scrolling pages plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="examples.css" />		
+
+    <script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../jquery.multiscroll.js"></script>
+
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#8FB98B', '#DE564B', '#ebddb9'],
+            	anchors: ['first', 'second', 'third'],
+            	menu: '#menu',
+				css3: true,
+            	
+				//equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+        		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+            });
+        });
+    </script>
+
+	<style>
+		.ms-section{
+			text-align: center;
+		}
+
+		#menu li {
+			display:inline-block;
+			margin: 10px;
+			color: #000;
+			background:rgb(255, 255, 255);
+			background: rgba(255,255,255, 0.3);
+			-webkit-border-radius: 15px; 
+		            border-radius: 15px; 
+		}
+		#menu li.active{
+			background:#666;
+			background: rgba(255,255,255, 1);
+			color: #000;
+		}
+		#menu li a{
+			text-decoration:none;
+			color: #000;
+		}
+		#menu li.active a:hover{
+			color: #000;
+		}
+		#menu li:hover{
+			background: rgba(255,255,255, 0.8);
+		}
+		#menu li a,
+		#menu li.active a{
+			padding: 9px 18px;
+			display:block;
+		}
+		#menu li.active a{
+			color: #000;
+		}
+		#menu{
+			position:fixed;
+			top:0;
+			left:0;
+			height: 40px;
+			z-index: 70;
+			width: 100%;
+			padding: 0;
+			margin:0;
+		}
+
+
+
+		/* 兔子&熊&大象 */
+
+		img.rabbit {
+  			position: absolute;
+  			left: 0%;
+  			right: 0;
+  			margin: auto;
+  			top: 7%;
+  			opacity: 100;
+  			margin-bottom: -100%;
+  			animation-name: rabbitmove;
+  			animation-duration: 0.7s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+		}
+
+		@keyframes rabbitmove {
+  		0% {
+ 		}
+  		25% {
+			top: 3%;
+  		}
+  		50% {
+    		
+  		}
+  		100% {
+    
+  		}
+		}
+
+
+		img.bear {
+  			position: absolute;
+  			left: 0%;
+  			right: 0;
+  			margin: auto;
+  			top: 15%;
+  			opacity: 100;
+  			margin-bottom: -100%;
+  			animation-name: bearmove;
+  			animation-duration: 0.7s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+		}
+
+		@keyframes bearmove {
+  		0% {
+			transform: rotate(7deg);
+ 		}
+  		25% {
+			
+  		}
+  		50% {
+    		
+  		}
+  		100% {
+			transform: rotate(-7deg);
+  		}
+		}
+
+
+		img.elephant {
+  			position: absolute;
+  			left: 0%;
+  			right: 0;
+  			margin: auto;
+  			top: 12%;
+  			opacity: 100;
+  			margin-bottom: -100%;
+  			animation-name: elephantmove;
+  			animation-duration: 5s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+		}
+
+		@keyframes elephantmove {
+  		0% {
+			
+ 		}
+  		25% {
+			
+  		}
+  		50% {
+    		
+  		}
+  		100% {
+			transform: rotate(360deg);
+  		}
+		}
+
+		.tiptext {
+			position: absolute;
+  			font-size: 20px;
+  			font-weight: 300;
+  			left: 90%;
+  			top: 90%;
+  			opacity: 1;
+  			color: #fff;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="first"><a href="#first">說明1</a></li>
+	<li data-menuanchor="second"><a href="#second">說明2</a></li>
+	<li data-menuanchor="third"><a href="#third">說明3</a></li>
+	<li data-menuanchor="Back_to_Nursery"><a href="nursery.html">回首頁</a></li>
+</ul>
+
+<div id="myContainer">
+
+	<div class="ms-left">
+		<div class="ms-section" id="left1">
+			<h2>對於幼兒園優質管理的了解有多少？</h2>
+			<h2>瀏覽完網頁後，來試試身手吧！</h2>
+		</div>
+
+		<div class="ms-section" id="left2">
+			<h1>本測驗共10題是非題</h1>
+			<h1>答對或答錯皆會有解析說明</h1>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<h1>總分100分，加油~</h1>
+		</div>
+	</div>
+	
+	<div class="ms-right">
+		<div class="ms-section" id="right1">
+			<img src="https://lanny891002.github.io/Instructions/examples/imgs/rabbit.png" class="rabbit" width=38%>
+		</div>
+
+		<div class="ms-section" id="right2">
+			<img src="https://lanny891002.github.io/Instructions/examples/imgs/bear.png" class="bear" width=40%>
+		</div>
+
+		<div class="ms-section" id="right3">
+			<img src="https://lanny891002.github.io/Instructions/examples/imgs/elephant.png" class="elephant" width=55%>
+		</div>
+	</div>
+	
+	<div class="tiptext">向下滾動</div>
+
+</div>
+
+</body>
+</html>
