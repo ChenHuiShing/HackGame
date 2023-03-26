@@ -1,0 +1,521 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+*{
+	margin: 0;
+	padding: 0;
+  font-family: 'cwTeXYen', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;
+}
+a,a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+/*引入套件*/
+.hvr-outline-out:before{
+  border: #BD9985 solid 3px;
+}
+.hvr-outline-out:active:before, .hvr-outline-out:focus:before, .hvr-outline-out:hover:before {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.btn_to_page,
+.btn_to_page:hover{
+  color: #BD9985;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.logo{
+  width: 90%;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.logo:hover{
+ transform: scale(1.2);
+}
+
+@media screen and (min-width: 1440px){
+
+  .main_background img:nth-child(4){
+    height: 450px;
+  }
+
+  .main_background img:nth-child(5){
+    display: none;
+  }
+   /* 主視覺 */
+  .key_vision{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+  .key_vision img:first-child{
+    width: 100%;
+    height: 750px;
+  }
+  .key_vision img:nth-child(2){
+    width: 300px;
+    position: absolute;
+    top: 14rem;
+    right: 7rem;
+    animation: cloud_down 2.5s infinite;
+  }
+  .key_vision img:nth-child(3){
+    width: 200px;
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    animation: cloud_up 2.5s infinite;
+  }
+  .key_vision .scroll_down img{
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 16rem;
+    left: 30rem;
+    transition: all 0.6s ease-in;
+  }
+  .key_vision .scroll_down img:hover{
+    transform: scale(1.1) rotate(2deg);
+  }
+  @keyframes cloud_up {
+    0% {
+      top: 8rem;
+      left: 10rem;
+    }
+    50% {
+      top: 7.5rem;
+      left: 10.5rem;
+    }
+    100% {
+      top: 8rem;
+      left: 10rem;
+    }
+  }
+  @keyframes cloud_down {
+    0% {
+      top: 14rem;
+      right: 7rem;
+    }
+    50% {
+      top: 13.5rem;
+      right: 7.5rem;
+    }
+    100% {
+      top: 14rem;
+      right: 7rem;
+    }
+  }
+
+  /* 底圖背景 */
+  .main_background img{
+    width: 100vw;
+  }
+  .main_background img{
+    margin-top: -25px;
+  }
+
+  /*幼兒園優質管理*/
+  .manege_container img:first-child{
+    width: 18%;
+    position: absolute;
+    top: 57rem;
+    left: 15rem;
+    opacity: 0;
+  }
+  .manege_container img:nth-child(2){
+    width: 0.8%;
+    position: absolute;
+    top: 55rem;
+    right: 45rem;
+    opacity: 0;
+  }
+  .manege_container .title{
+    position: absolute;
+    top: 55rem;
+    right: 37rem;
+    font-size: 30px;
+    opacity: 0;
+  }
+  .manege_container p{
+    position: absolute;
+    top: 62rem;
+    right: 14.5rem;
+    width: 500px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+  }
+  .manege_container .btn_to_page{
+    position: absolute;
+    top: 70rem;
+    left: 48rem;
+    opacity: 0;
+  }
+  /*動畫*/
+  .animation_container img:first-child{
+    width: 15%;
+    position: absolute;
+    top: 88rem;
+    right: 15rem;
+    opacity: 0;
+  }
+  .animation_container img:nth-child(2){
+    width: 0.8%;
+    position: absolute;
+    top: 88rem;
+    left: 30rem;
+    opacity: 0;
+  }
+  .animation_container .title{
+    position: absolute;
+    top: 87rem;
+    left: 32rem;
+    font-size: 30px;
+    opacity: 0;
+  }
+  .animation_container ul{
+    position: absolute;
+    top: 90rem;
+    left: 31rem;
+    width: 500px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+  }
+  .animation_container .btn_to_page{
+    position: absolute;
+    top: 102rem;
+    left: 28rem;
+    opacity: 0;
+  }
+  /*資訊分享*/
+  .info_share_container img:first-child{
+    width: 13%;
+    position: absolute;
+    top: 114rem;
+    left: 20rem;
+    opacity: 0;
+  }
+  .info_share_container img:nth-child(2){
+    width: 0.8%;
+    position: absolute;
+    top: 115rem;
+    right: 45rem;
+    opacity: 0;
+  }
+  .info_share_container .title{
+    position: absolute;
+    top: 115rem;
+    right: 37rem;
+    font-size: 30px;
+    opacity: 0;
+  }
+  .info_share_container p{
+    position: absolute;
+    top: 120rem;
+    right: 24.5rem;
+    width: 340px;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+  }
+  .info_share_container .btn_to_page{
+    position: absolute;
+    top: 128rem;
+    right: 35rem;
+    opacity: 0;
+  }
+  /*優質小學堂*/
+  .test_container img:first-child{
+    width: 15%;
+    position: absolute;
+    top: 146rem;
+    right: 20rem;
+    opacity: 0;
+  }
+  .test_container img:nth-child(2){
+    width: 0.8%;
+    position: absolute;
+    top: 145rem;
+    left: 30rem;
+    opacity: 0;
+  }
+  .test_container .title{
+    position: absolute;
+    top: 145rem;
+    left: 32rem;
+    font-size: 30px;
+    opacity: 0;
+  }
+  .test_container p{
+    position: absolute;
+    top: 150rem;
+    left: 30rem;
+    width: 370px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+  }
+  .test_container .btn_to_page{
+    position: absolute;
+    top: 159rem;
+    left: 25rem;
+    opacity: 0;
+  }
+
+  footer p{
+    width: 100%;
+    padding: 15px 0px;
+    background: #BD9985;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+}
+/* 螢幕裝置大小小於1080px */
+@media screen and (max-width: 1080px){
+
+  /* 主視覺 */
+  .key_vision{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+  .key_vision img:first-child{
+    width: 100%;
+  }
+  .key_vision img:nth-child(2){
+    width: 200px;
+    position: absolute;
+    top: 18rem;
+    right: 4rem;
+    animation: cloud_down 2.5s infinite;
+  }
+  .key_vision img:nth-child(3){
+    width: 120px;
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
+    animation: cloud_up 2.5s infinite;
+  }
+  .key_vision .scroll_down img{
+    width: 40%;
+    position: absolute;
+    top: 13rem;
+    left: 20rem;
+    transition: all 0.6s ease-in;
+  }
+  .key_vision .scroll_down img:hover {
+    transform: scale(1.1) rotate(2deg);
+  }
+
+  @keyframes cloud_up {
+    0% {
+      top: 6rem;
+      left: 5rem;
+    }
+    50% {
+      top: 5.5rem;
+      left: 5.5rem;
+    }
+    100% {
+      top: 6rem;
+      left: 5rem;
+    }
+  }
+  @keyframes cloud_down {
+    0% {
+      top: 18rem;
+      right: 4rem;
+    }
+    50% {
+     top: 17.5rem;
+      right: 3.5rem;
+    }
+    100% {
+      top: 18rem;
+      right: 4rem;
+    }
+  }
+
+  /* 底圖背景 */
+  .main_background img{
+    width: 100vw;
+  }
+  .main_background img{
+    margin-top: -25px;
+  }
+
+  /*幼兒園優質管理*/
+  .manege_container img:first-child{
+    width: 22%;
+    position: absolute;
+    top: 45rem;
+    left: 12rem;
+  }
+  .manege_container img:nth-child(2){
+    width: 1%;
+    position: absolute;
+    top: 48.2rem;
+    right: 30rem;
+  }
+  .manege_container .title{
+    position: absolute;
+    top: 48rem;
+    right: 23rem;
+    font-size: 25px;
+  }
+  .manege_container p{
+    position: absolute;
+    top: 51rem;
+    right: 7rem;
+    width: 380px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .manege_container .btn_to_page{
+    position: absolute;
+    top: 59rem;
+    left: 37rem;
+  }
+  /*動畫*/
+  .animation_container img:first-child{
+    width: 16%;
+    position: absolute;
+    top: 76rem;
+    right: 13rem;
+  }
+  .animation_container img:nth-child(2){
+    width: 1%;
+    position: absolute;
+    top: 78.2rem;
+    left: 17rem;
+  }
+  .animation_container .title{
+    position: absolute;
+    top: 78rem;
+    left: 19rem;
+    font-size: 25px;
+  }
+  .animation_container ul{
+    position: absolute;
+    top: 81rem;
+    left: 18rem;
+    width: 500px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .animation_container .btn_to_page{
+    position: absolute;
+    top: 89rem;
+    left: 17rem;
+  }
+  /*資訊分享*/
+  .info_share_container img:first-child{
+    width: 16%;
+    position: absolute;
+    top: 102rem;
+    left: 15rem;
+  }
+  .info_share_container img:nth-child(2){
+    width: 1%;
+    position: absolute;
+    top: 108.2rem;
+    right: 30rem;
+  }
+  .info_share_container .title{
+    position: absolute;
+    top: 108rem;
+    right: 23rem;
+    font-size: 25px;
+  }
+  .info_share_container p{
+    position: absolute;
+    top: 112rem;
+    right: 9.5rem;
+    width: 340px;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .info_share_container .btn_to_page{
+    position: absolute;
+    top: 118rem;
+    right: 23.3rem;
+  }
+  /*優質小學堂*/
+  .test_container img:first-child{
+    width: 16%;
+    position: absolute;
+    top: 135rem;
+    right: 13rem;
+  }
+  .test_container img:nth-child(2){
+    width: 1%;
+    position: absolute;
+    top: 138.2rem;
+    left: 17rem;
+  }
+  .test_container .title{
+    position: absolute;
+    top: 138rem;
+    left: 19rem;
+    font-size: 25px;
+  }
+  .test_container p{
+    position: absolute;
+    top: 142rem;
+    left: 17rem;
+    width: 370px;
+    text-align: left;
+    line-height: 36px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .test_container .btn_to_page{
+    position: absolute;
+    top: 148rem;
+    left: 17rem;
+  }
+
+  footer p{
+    width: 100%;
+    padding: 15px 0px;
+    background: #BD9985;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+
+
+
+
