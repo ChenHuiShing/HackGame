@@ -1,0 +1,89 @@
+.nav-bar {
+  /* 選單大小 */
+  width: 100vw;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+}
+.nav-bar ul {
+  list-style-type: none;
+  /*設定ul內距為零*/
+  padding: 15px;
+  overflow: auto;
+  text-align: center;
+}
+.nav-bar a {
+  /* 將a改為區塊元件，以便指定寬高 */
+  display: inline-block;
+  width: 125px;
+  height: 35px;
+}
+.nav-bar > ul > li {
+  /* 利用float讓第一層li水平排列*/
+  float: right;
+  width: 140px;
+}
+/*logo 靠左浮動*/
+.nav-bar ul > a{
+  float: left;
+}
+.nav-bar ul li ul {
+  /*讓ul跳脫文件流以利定位*/
+  position: absolute;
+  /*避免出現捲軸，若不設定一但文字過長或是有下一層資料就會跑出捲軸*/
+  overflow: visible;
+  visibility: hidden;
+  padding: 0;
+}
+.nav-bar ul:hover {
+  visibility: visible;
+}
+/*顯示滑鼠所在的<ul><li><a>後緊跟的那個<ul>，也就是下一層資料*/
+.nav-bar ul li a:hover + ul {
+  visibility: visible;
+}
+.nav-bar {
+  font-size: 18px;
+}
+.nav-bar a {
+  color: #606060;
+  text-decoration: none;
+  line-height: 35px;
+}
+.nav-bar ul li ul li a {
+  font-size: 16px;
+  color: #606060;
+  text-align: center;
+
+}
+.nav-bar ul li a{
+  width: 145px;
+  transition: all 0.1s ease-in-out;
+}
+.nav-bar ul li a:hover,
+.nav-bar ul li > a.active
+ {
+  width: 145px;
+  margin: 0;
+  background-color: #E8DACE;
+  transform: scale(1.1);
+}
+.nav-bar > ul{
+   background: transparent;
+   transition: all 0.5s cubic-bezier(.21,.61,.45,.5);
+}
+.nav-bar > ul.active{
+  display: block;
+  background: rgba(244,244,244,0.97) !important;
+  box-shadow: rgba(00,00,00,0.3) 0 0 10px;
+}
+
+/*活動辦理夏拉選單*/
+.nav-bar ul li > ul,
+.nav-bar ul li > ul.active
+{
+  background: rgba(244,244,244,0.97) !important;
+  box-shadow: rgba(00,00,00,0.2) 0 0 10px;
+}

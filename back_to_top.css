@@ -1,0 +1,24 @@
+body{
+  scroll-behavior: smooth;
+}
+#back_btn {
+  display: none;
+  position: fixed;
+  top: 38rem;
+  right: 2rem;
+  cursor: pointer;
+  width: 7%;
+  z-index: 100;
+  animation: float 2.5s infinite;
+}
+@keyframes float {
+  0% {
+    top: 38rem;
+  }
+  50% {
+    top: 38.5rem;
+  }
+  100% {
+    top: 38rem;
+  }
+}
